@@ -1,4 +1,4 @@
-package edu.umsl.cs4250.project1;
+package net.jaredible.umsl.cmpsci4250;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -93,8 +93,7 @@ public class Front {
 	}
 
 	/*
-	 * getChar - a function to get the next character of input and determine its
-	 * character class
+	 * getChar - a function to get the next character of input and determine its character class
 	 */
 	public static void getChar() {
 		try {
@@ -120,8 +119,7 @@ public class Front {
 	}
 
 	/*
-	 * getNonBlank - a function to call getChar until it returns a non-whitespace
-	 * character
+	 * getNonBlank - a function to call getChar until it returns a non-whitespace character
 	 */
 	public static void getNonBlank() {
 		while (Character.isSpaceChar(nextChar)) {
