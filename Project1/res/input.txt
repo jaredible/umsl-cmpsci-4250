@@ -1,0 +1,2 @@
+total = (sum + 100) / size;
+average = (total * 100) - 10;
