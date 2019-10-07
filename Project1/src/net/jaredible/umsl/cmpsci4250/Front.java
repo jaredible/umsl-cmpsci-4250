@@ -175,6 +175,7 @@ public class Front {
 
 	/* main driver */
 	public static void main(String args[]) {
+		// test
 		lexLen = 0;
 		lexeme = new char[MAX_LEXEME_LEN + 2];
 		for (int i = 0; i < lexeme.length; i++) {
