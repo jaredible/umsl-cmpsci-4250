@@ -30,16 +30,17 @@
 ;; (my_area 3 1) => #f
 
 (define (rem_second list)
-  (if (= (length list) 2)
-      (cons (car list) (cdr (cdr list)))
-      '()))
+  (if (< (length list) 2)
+      '()
+      (cons (car list) (cdr (cdr list)))))
 
 ;; (rem_second '()) => '()
 ;; (rem_second '(1)) => '()
 ;; (rem_second '(1 2)) => '(1)
-;; (rem_second '(1 2 3)) => '()
+;; (rem_second '(1 2 3)) => '(1 3)
 ;; (rem_second '(1 (2 3))) => '(1)
 ;; (rem_second '((1 2) 3)) => '((1 2))
+;; (rem_second '((1 2) (3 4) (5 6))) => '((1 2) (5 6))
 
 (define (my_union a b)
   (cond
