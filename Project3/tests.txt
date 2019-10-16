@@ -1,0 +1,25 @@
+Question1
+a. parent(pete, mark).
+b. parent(anne, jenny).
+c. father(X, todd).
+d. sibling(todd, X).
+e. brother(X, lilly).
+f. grandparent(X, henry).
+g. sister(X, alice).
+h. brother(frank, kate).
+i. mother(X, matt).
+j. brother(mark, anne).
+
+Question2
+trace, maximum_number([1, 2], X).
+maximum_number([1, 8, 3, 6, 5, 4, 7, 2], X).
+
+Question3
+union_list([], [], X).
+union_list([1, 2, 3], [1, 2, 3], X).
+union_list([1, 2, 3], [4, 5, 6], X).
+union_list([1, 2, 3], [], X).
+union_list([], [1, 2, 3], X).
+union_list([1], [1, 2, 3], X).
+union_list([1, 2, 3], [1], X).
+union_list([1], [1], X).
