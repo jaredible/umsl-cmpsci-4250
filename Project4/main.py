@@ -1,17 +1,17 @@
 class Product:
-  def __init__(self, name, price, discountPercent):
-    self.__name = name
-    self.__price = price
-    self.__discountPercent = discountPercent
+    def __init__(self, name, price, discountPercent):
+        self.__name = name
+        self.__price = price
+        self.__discountPercent = discountPercent
 
-  def getDiscountAmount(self):
-      return self.__price * self.__discountPercent
+    def getDiscountAmount(self):
+        return self.__price * self.__discountPercent
 
-  def getDiscountPrice(self):
-      return self.__price - self.getDiscountAmount()
+    def getDiscountPrice(self):
+        return self.__price - self.getDiscountAmount()
 
-  def printDescription(self):
-      return "name: " + self.__name + ", price: " + str(self.__price) + ", discountPercent: " + str(self.__discountPercent) + ", discountAmount: " + str(self.getDiscountAmount()) + ", discountPrice: " + str(self.getDiscountPrice())
+    def printDescription(self):
+        return "name: " + self.__name + ", price: " + str(self.__price) + ", discountPercent: " + str(self.__discountPercent) + ", discountAmount: " + str(self.getDiscountAmount()) + ", discountPrice: " + str(self.getDiscountPrice())
 
 class Book(Product):
     def __init__(self, author, name, price, discountPercent):
@@ -33,6 +33,6 @@ product = Product("test", 10, 0.1)
 book = Book("me", "test1", 12, 0.5)
 movie = Movie(2019, "test2", 100, 0.2)
 
-print(product.printDescription())
-print(book.printDescription())
-print(movie.printDescription())
+print("Product description - " + product.printDescription())
+print("Book description - " + book.printDescription())
+print("Movie description - " + movie.printDescription())
