@@ -11,7 +11,7 @@ class Product:
         return self.__price - self.getDiscountAmount()
 
     def printDescription(self):
-        return "name: " + self.__name + ", price: " + str(self.__price) + ", discountPercent: " + str(self.__discountPercent) + ", discountAmount: " + str(self.getDiscountAmount()) + ", discountPrice: " + str(self.getDiscountPrice())
+        print("Name: {}, Price: ${:,.2f}, DiscountPercent: {:,.1f}%, DiscountAmount: ${:,.2f}, DiscountPrice: ${:,.2f}".format(self.__name, self.__price, (self.__discountPercent * 100), self.getDiscountAmount(), self.getDiscountPrice()))
 
 class Book(Product):
     def __init__(self, author, name, price, discountPercent):
@@ -19,7 +19,8 @@ class Book(Product):
         Product.__init__(self, name, price, discountPercent)
 
     def printDescription(self):
-        return "author: " + self.__author + ", " + Product.printDescription(self)
+        print("Author: {}, ".format(self.__author), end="")
+        Product.printDescription(self)
 
 class Movie(Product):
     def __init__(self, year, name, price, discountPercent):
@@ -27,12 +28,13 @@ class Movie(Product):
         Product.__init__(self, name, price, discountPercent)
 
     def printDescription(self):
-        return "year: " + str(self.__year) + ", " + Product.printDescription(self)
+        print("Year: {}, ".format(self.__year), end="")
+        Product.printDescription(self)
 
-product = Product("test", 10, 0.1)
-book = Book("me", "test1", 12, 0.5)
-movie = Movie(2019, "test2", 100, 0.2)
+product = Product("Rubik's Cube", 60, 0.3)
+book = Book("Robert W. Sebesta", "Concepts of Programming Languages (11th Edition)", 160, 0.2)
+movie = Movie(2018, "Ready Player One", 20, 0.1)
 
-print("Product description - " + product.printDescription())
-print("Book description - " + book.printDescription())
-print("Movie description - " + movie.printDescription())
+product.printDescription()
+book.printDescription()
+movie.printDescription()
