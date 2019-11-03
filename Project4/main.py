@@ -32,9 +32,28 @@ class Movie(Product):
         Product.printDescription(self)
 
 product = Product("Rubik's Cube", 60, 0.3)
-book = Book("Robert W. Sebesta", "Concepts of Programming Languages (11th Edition)", 160, 0.2)
-movie = Movie(2018, "Ready Player One", 20, 0.1)
-
+print("product = Product(\"Rubik's Cube\", 60, 0.3)")
+print("Calling product.getDiscountAmount() returns ${:,.2f}".format(product.getDiscountAmount()))
+print("Calling product.getDiscountPrice() returns ${:,.2f}".format(product.getDiscountPrice()))
+print("Calling product.printDescription() prints ", end="")
 product.printDescription()
+
+print("-------------------------------------")
+
+book = Book("John D. Clark", "Ignition!", 16, 0.2)
+print("book = Book(\"John D. Clark\", \"Ignition!\", 16, 0.2)")
+print("Calling book.getDiscountAmount() returns ${:,.2f}".format(book.getDiscountAmount()))
+print("Calling book.getDiscountPrice() returns ${:,.2f}".format(book.getDiscountPrice()))
+print("Calling book.printDescription() prints ", end="")
 book.printDescription()
+
+print("-------------------------------------")
+
+movie = Movie(2018, "Ready Player One", 20, 0.1)
+print("movie = Movie(2018, \"Ready Player One\", 20, 0.1)")
+print("Calling movie.getDiscountAmount() returns ${:,.2f}".format(movie.getDiscountAmount()))
+print("Calling movie.getDiscountPrice() returns ${:,.2f}".format(movie.getDiscountPrice()))
+print("Calling movie.printDescription() prints ", end="")
 movie.printDescription()
+
+print("-------------------------------------")
