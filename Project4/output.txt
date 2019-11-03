@@ -1,0 +1,15 @@
+product = Product("Rubik's Cube", 60, 0.3)
+Calling product.getDiscountAmount() returns $18.00
+Calling product.getDiscountPrice() returns $42.00
+Calling product.printDescription() prints Name: Rubik's Cube, Price: $60.00, DiscountPercent: 30.0%, DiscountAmount: $18.00, DiscountPrice: $42.00
+-------------------------------------
+book = Book("John D. Clark", "Ignition!", 16, 0.2)
+Calling book.getDiscountAmount() returns $3.20
+Calling book.getDiscountPrice() returns $12.80
+Calling book.printDescription() prints Author: John D. Clark, Name: Ignition!, Price: $16.00, DiscountPercent: 20.0%, DiscountAmount: $3.20, DiscountPrice: $12.80
+-------------------------------------
+movie = Movie(2018, "Ready Player One", 20, 0.1)
+Calling movie.getDiscountAmount() returns $2.00
+Calling movie.getDiscountPrice() returns $18.00
+Calling movie.printDescription() prints Year: 2018, Name: Ready Player One, Price: $20.00, DiscountPercent: 10.0%, DiscountAmount: $2.00, DiscountPrice: $18.00
+-------------------------------------
