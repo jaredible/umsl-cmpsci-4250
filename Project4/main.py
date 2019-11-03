@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+#title          :main.py
+#description    :Displays the use of polymorphic functions.
+#author         :Jared Diehl
+#date           :20191103
+#version        :1.0
+#usage          :python3 main.py
+#notes          :CMPSCI4250 Project4
+
 class Product:
     def __init__(self, name, price, discountPercent):
         self.__name = name
