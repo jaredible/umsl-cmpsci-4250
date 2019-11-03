@@ -20,12 +20,7 @@ class Product:
         return self.__price - self.getDiscountAmount()
 
     def printDescription(self):
-        name = self.__name
-        price = self.__price
-        discountPercent = (self.__discountPercent * 100)
-        discountAmount = self.getDiscountAmount()
-        discountPrice = self.getDiscountPrice()
-        print("Name: {}, Price: ${:,.2f}, DiscountPercent: {:,.1f}%, DiscountAmount: ${:,.2f}, DiscountPrice: ${:,.2f}".format(name, price, discountPercent, discountAmount, discountPrice))
+        print("Name: {}, Price: ${:,.2f}, DiscountPercent: {:,.1f}%, DiscountAmount: ${:,.2f}, DiscountPrice: ${:,.2f}".format(self.__name, self.__price, (self.__discountPercent * 100), self.getDiscountAmount(), self.getDiscountPrice()))
 
 class Book(Product):
     def __init__(self, author, name, price, discountPercent):
