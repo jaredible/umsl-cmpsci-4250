@@ -1,3 +1,11 @@
+// Title	:main
+// Description	:A C program that examines activation records in the runtime stack.
+// Author	:Jared Diehl
+// Date		:20191113
+// Version	:1.0
+// Usage	:./main
+// Notes	:CMPSCI2450 Project5
+
 #include <stdio.h>
 #include <stdlib.h>
 
