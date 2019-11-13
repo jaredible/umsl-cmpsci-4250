@@ -1,7 +1,5 @@
 # Mindbank
 
-<br/>
-
 ### Install
 
 ```
