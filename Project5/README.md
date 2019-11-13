@@ -1,4 +1,4 @@
-# Mindbank
+# CMPSCI4250 Project5
 
 ### Install
 
