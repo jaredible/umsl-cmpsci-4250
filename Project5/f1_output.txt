@@ -1,0 +1,20 @@
+Call #1	 at 0x7fb566501730
+AR size #1	 is -140417082332976
+Call #2	 at 0x7fb566501730
+AR size #2	 is 0
+Call #3	 at 0x7fb566501730
+AR size #3	 is 0
+Call #4	 at 0x7fb566501730
+AR size #4	 is 0
+Call #5	 at 0x7fb566501730
+AR size #5	 is 0
+Call #6	 at 0x7fb566501730
+AR size #6	 is 0
+Call #7	 at 0x7fb566501730
+AR size #7	 is 0
+Call #8	 at 0x7fb566501730
+AR size #8	 is 0
+Call #9	 at 0x7fb566501730
+AR size #9	 is 0
+Call #10	 at 0x7fb566501730
+AR size #10	 is 0
