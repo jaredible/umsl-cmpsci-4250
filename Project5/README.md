@@ -1,4 +1,4 @@
-# CMPSCI4250 Project5
+# UMSL CMPSCI 4250 Project5
 
 ### Compile
 
