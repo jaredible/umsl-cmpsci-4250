@@ -6,7 +6,7 @@
 gcc main.c -o main
 ```
 
-### Deployment
+### Deploy
 
 ```
 ./main
