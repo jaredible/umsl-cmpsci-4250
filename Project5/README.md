@@ -1,12 +1,12 @@
 # CMPSCI4250 Project5
 
-### Install
+### Compile
 
 ```
 gcc main.c -o main
 ```
 
-### Deploy
+### Run
 
 ```
 ./main
