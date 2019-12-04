@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 1000
+#define SIZE 10
 
 void f1()
 {
@@ -56,15 +56,26 @@ void f3()
 	char *arr = (char*)malloc(sizeof(char) * SIZE);
 	static int n = 1;
 	static long int addr;
+	char c;
 	
-	printf("Call #%d\t at %p\n", n, arr);
-	printf("AR size #%d\t is %ld\n", n, addr - (long)arr);
+	printf("%ld\n", sizeof(char));
+	//printf("arr address: %ld\n", (long)&arr);
+	//printf("c address  : %ld\n", (long)&c);
+	
+	printf("%ld\n", addr);
+	//printf("%ld\n", (long)&c);
+	
+	//printf("%ld\n", (long)&c - addr);
+	//printf("%ld\n", addr);
+	
+	//printf("Call #%d\t at %p\n", n, arr);
+	//printf("AR size #%d\t is %ld\n", n, (long)c - (long)arr);
 	
 	n++;
 	
 	addr = (long)arr;
 	
-	free(arr);
+	//free(arr);
 	
 	if (n <= 10)
 	{
@@ -76,11 +87,32 @@ void f3()
 	}
 }
 
+void test()
+{
+	char *arr = (char*)malloc(sizeof(char) * SIZE);
+	char *abc = (char*)malloc(sizeof(char) * SIZE);
+	printf("%ld\n", (long)arr);
+	static int n = 1;
+	char a;
+	
+	n++;
+	
+	if (n <= 10)
+	{
+		test();
+	}
+	else
+	{
+		return;
+	}
+}
+
 int main()
 {
-	f1();
+	//f1();
 	//f2();
 	//f3();
+	test();
 	
 	return 0;
 }
