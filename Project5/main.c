@@ -1,7 +1,7 @@
 // Title	:main
 // Description	:A C program that examines activation records in the runtime stack.
 // Author	:Jared Diehl
-// Date		:20191113
+// Date		:20191204
 // Version	:1.0
 // Usage	:./main
 // Notes	:CMPSCI2450 Project5
@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 10
+#define SIZE 1000
 
 void f1()
 {
@@ -83,8 +83,8 @@ void f3()
 int main()
 {
 	//f1();
-	f2();
-	//f3();
+	//f2();
+	f3();
 	
 	return 0;
 }
