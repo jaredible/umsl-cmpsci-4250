@@ -58,9 +58,6 @@ void f3()
 	static int n = 1;
 	static long int addr;
 	
-	//printf("%p\n", arr);
-	//printf("%ld\n", (long)&c);
-	
 	printf("Call #%d\t at %ld\n", n, (long)&c);
 	printf("AR size #%d\t is %ld\n", n, addr - (long)&c);
 	
